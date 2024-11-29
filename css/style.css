@@ -1,0 +1,305 @@
+@charset "UTF-8";
+/*RESET CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+#body {
+  max-width: 1500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url("../images/background.png");
+}
+
+#main {
+  width: 100%;
+  min-height: auto;
+  padding: 0 7%;
+}
+#main h1 {
+  font-size: clamp(2.1rem, 3vw, 3rem);
+  text-align: center;
+  color: #ff9307;
+}
+#main h2 {
+  font-size: clamp(1.9rem, 3vw, 2.3rem);
+  padding: 30px 0 15px 0;
+  color: #333;
+  display: inline-block;
+  animation: subtleMove 3s infinite ease-in-out;
+  text-align: center;
+}
+@keyframes subtleMove {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+/*-----------HEADER-----------*/
+#header {
+  width: 100%;
+}
+#header img {
+  width: 100%;
+  height: auto;
+}
+
+/*-----------CONTENIDO DE ARTICULOS Y BOTONES-----------*/
+#cards__content--python {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30px;
+  column-gap: 20px;
+  padding: 0 20px 20px 30px;
+  backdrop-filter: blur(3px) saturate(0%);
+  -webkit-backdrop-filter: blur(3px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0.796);
+  border-radius: 80px 80px 20px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+#cards__content--python section {
+  display: flex;
+  column-gap: 30px;
+}
+#cards__content--python article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /*-----------ESTILOS BOTONES-----------*/
+}
+#cards__content--python article button {
+  width: 100%;
+  padding: 17px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(223, 210, 27);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.1vw, 1.3rem);
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+#cards__content--python article button:hover {
+  letter-spacing: 2px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
+}
+#cards__content--python article button:active {
+  letter-spacing: 2px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+/*-----------TABLA HORARIOS-----------*/
+.table-desktop {
+  visibility: visible;
+}
+
+.table-mobile {
+  display: none;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+table th {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+table tr {
+  transition: background-color 0.2s;
+}
+table tr:hover {
+  background-color: #f1f1f1;
+}
+table tr .bold {
+  font-weight: bold;
+}
+
+/*-----------CONTENIDO DE SECCIÓN DE EXTRAS-----------*/
+.cards__python--extras {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 30px;
+  column-gap: 20px;
+  padding: 0 20px 20px 30px;
+  backdrop-filter: blur(3px) saturate(0%);
+  -webkit-backdrop-filter: blur(3px) saturate(0%);
+  background-color: rgba(255, 255, 255, 0.796);
+  border-radius: 80px 80px 20px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.cards__python--extras article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  /*-----------ESTILOS BOTONES-----------*/
+}
+.cards__python--extras article button {
+  width: 100%;
+  padding: 17px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  background-color: rgb(223, 210, 27);
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 8px;
+  letter-spacing: 1px;
+  color: #333;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.1vw, 1.3rem);
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+.cards__python--extras article button:hover {
+  letter-spacing: 2px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 7px 29px 0px;
+}
+.cards__python--extras article button:active {
+  letter-spacing: 2px;
+  background-color: hsl(261, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93, 24, 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+}
+
+#footer {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#footer img {
+  width: 250px;
+}
+
+@media screen and (max-width: 900px) {
+  /*-----------AJUSTO ARTICULOS Y CONTENIDO PYTHON-----------*/
+  #cards__content--python section {
+    flex-direction: column;
+  }
+  #cards__content--python article {
+    row-gap: 0px;
+  }
+  #cards__content--python article a {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  /*-----------CORRIJO HEADER Y AJUSTO BOTONES-----------*/
+  #header img {
+    height: 80px;
+  }
+}
+/* Menú lateral */
+#sidebar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#toggle-menu {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Menú desplegable */
+#menu {
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px;
+  /* Transición inicial */
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.3s ease-out;
+}
+
+#menu.show {
+  max-height: 300px; /* Ajustar según el contenido */
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Clase oculta sigue siendo necesaria */
+.hidden {
+  display: none;
+}
+
+/* Estilo de los enlaces del menú */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#menu ul li {
+  margin-bottom: 10px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#menu ul li a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

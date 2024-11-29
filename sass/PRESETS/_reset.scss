@@ -1,0 +1,57 @@
+/*RESET CSS*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+}
+
+#body {
+    max-width: 1500px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    background-image: url("../images/background.png");
+}
+
+#main {
+    width: 100%;
+    min-height: auto;
+    padding: 0 7%;
+    
+
+
+
+    h1 {
+        font-size: clamp(2.1rem, 3vw, 3rem);
+        // padding-top: 110px;
+        text-align: center;
+        color: #ff9307;
+        
+    }
+
+    h2 {
+        font-size: clamp(1.9rem, 3vw, 2.3rem);
+        padding: 30px 0 15px 0;
+        color: #333;
+        display: inline-block;
+        animation: subtleMove 3s infinite ease-in-out;
+        text-align: center;
+    }
+
+    @keyframes subtleMove {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-2px);
+        }
+    }
+}

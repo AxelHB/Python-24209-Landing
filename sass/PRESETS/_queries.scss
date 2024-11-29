@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px){
+    
+    /*-----------AJUSTO ARTICULOS Y CONTENIDO PYTHON-----------*/
+        #cards__content--python {
+            section {
+                flex-direction: column ;
+            }
+            
+            article {
+                row-gap: 0px;
+    
+                a {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        /*-----------CORRIJO HEADER Y AJUSTO BOTONES-----------*/
+        #header img {
+            height: 80px;
+        }
+    }
